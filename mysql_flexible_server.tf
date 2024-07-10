@@ -3,7 +3,7 @@ resource "azurerm_mysql_flexible_server" "wp-flex-server" {
   resource_group_name    = var.resource_group_name
   location               = var.resource_group_location
   administrator_login    = "wpadmin"
-  administrator_password = "wppass@123"
+  administrator_password = "yourpassword"
   backup_retention_days  = 7
   delegated_subnet_id    = azurerm_subnet.wppublicSubnet2.id
     //private_dns_zone_id    = azurerm_private_dns_zone.mydnszone.id
